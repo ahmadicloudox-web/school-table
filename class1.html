@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>جدول حصص الصف الأول - زووم</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; padding: 20px; text-align: center; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        /* مكان الشعار */
+        .school-logo { width: 120px; height: auto; margin-bottom: 10px; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; table-layout: fixed; }
+        th, td { border: 1px solid #ddd; padding: 15px; text-align: center; font-size: 16px; }
+        
+        .header-row { background-color: #333; color: white; }
+        .day-column { background-color: #f8f9fa; font-weight: bold; width: 100px; }
+        
+        /* ألوان المواد */
+        .subject { border-radius: 8px; display: block; padding: 10px; color: #fff; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .subject:hover { opacity: 0.8; transform: scale(1.05); }
+        
+        .arabic { background-color: #e67e22; } /* برتقالي */
+        .english { background-color: #3498db; } /* أزرق */
+        .math { background-color: #2ecc71; } /* أخضر */
+        .religion { background-color: #9b59b6; } /* بنفسجي */
+        .national { background-color: #e74c3c; } /* أحمر */
+        
+        .empty { color: #ccc; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/120x120?text=الشعار" alt="شعار المدرسة" class="school-logo">
+    <h2>جدول الحصص الافتراضي - الصف الأول</h2>
+    <p>اضغط على اسم المادة للانتقال إلى حصة الزووم مباشرة</p>
+
+    <table>
+        <tr class="header-row">
+            <th>اليوم</th>
+            <th>(1)<br>8:30</th>
+            <th>(2)<br>9:20</th>
+            <th>(3)<br>10:10</th>
+            <th>(4)<br>11:00</th>
+            <th>(5)<br>11:50</th>
+        </tr>
+        
+        <tr>
+            <td class="day-column">الأحد</td>
+            <td><a href="#" class="subject national">وطنية</a></td>
+            <td><a href="#" class="subject english">انجليزي</a></td>
+            <td><a href="#" class="subject arabic">عربي</a></td>
+            <td><a href="#" class="subject arabic">عربي</a></td>
+            <td><a href="#" class="subject math">رياضيات</a></td>
+        </tr>
+
+        <tr>
+            <td class="day-column">الاثنين</td>
+            <td colspan="5" class="empty">لا يوجد حصص مجدولة</td>
+        </tr>
+
+        <tr>
+            <td class="day-column">الثلاثاء</td>
+            <td><a href="#" class="subject national">وطنية</a></td>
+            <td><a href="#" class="subject religion">دين</a></td>
+            <td><a href="#" class="subject arabic">عربي</a></td>
+            <td><a href="#" class="subject english">انجليزي</a></td>
+            <td><a href="#" class="subject math">رياضيات</a></td>
+        </tr>
+
+        <tr>
+            <td class="day-column">الأربعاء</td>
+            <td colspan="5" class="empty">لا يوجد حصص مجدولة</td>
+        </tr>
+
+        <tr>
+            <td class="day-column">الخميس</td>
+            <td class="empty">-</td>
+            <td><a href="#" class="subject english">انجليزي</a></td>
+            <td><a href="#" class="subject math">رياضيات</a></td>
+            <td><a href="#" class="subject arabic">عربي</a></td>
+            <td><a href="#" class="subject religion">دين</a></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
