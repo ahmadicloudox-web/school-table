@@ -5,17 +5,11 @@
     <title>جدول حصص الصف الأول - زووم</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; padding: 20px; text-align: center; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; }
         
-        /* مكان الشعار الدائري - التعديل الجديد */
         .school-logo { 
-            width: 120px; 
-            height: 120px; 
-            border-radius: 50%; /* تجعل الصورة دائرية */
-            object-fit: cover; /* تحافظ على تناسب الصورة */
-            border: 3px solid #ddd; /* إطار دائري بسيط */
-            background-color: white; /* خلفية بيضاء للشعار الدائري */
-            display: inline-block; /* ليتوسط الصفحة */
+            width: 140px; 
+            height: auto; 
             margin-bottom: 10px;
         }
         
@@ -25,25 +19,38 @@
         .header-row { background-color: #333; color: white; }
         .day-column { background-color: #f8f9fa; font-weight: bold; width: 100px; }
         
-        /* ألوان المواد */
         .subject { border-radius: 8px; display: block; padding: 10px; color: #fff; font-weight: bold; text-decoration: none; transition: 0.3s; }
         .subject:hover { opacity: 0.8; transform: scale(1.05); }
         
-        .arabic { background-color: #e67e22; } /* برتقالي */
-        .english { background-color: #3498db; } /* أزرق */
-        .math { background-color: #2ecc71; } /* أخضر */
-        .religion { background-color: #9b59b6; } /* بنفسجي */
-        .national { background-color: #e74c3c; } /* أحمر */
+        .arabic { background-color: #e67e22; } 
+        .english { background-color: #3498db; } 
+        .math { background-color: #2ecc71; } 
+        .religion { background-color: #9b59b6; } 
+        .national { background-color: #e74c3c; } 
         
         .empty { color: #ccc; font-style: italic; }
+
+        /* تنسيق التوقيع في الأسفل */
+        .footer-credit {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        .footer-credit strong {
+            color: #333;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <img src="logo_school.png" alt="شعار المدرسة" class="school-logo">
+    <img src="logo_school.png" alt="مدرسة الإيمان الثانوية" class="school-logo">
+    
     <h2>جدول الحصص الافتراضي - الصف الأول</h2>
-    <p>اضغط على اسم المادة للانتقال إلى حصة الزووم مباشرة</p>
+    <p>مدرسة الإيمان الثانوية - فرع الشيخ علي قدورة الطزيز</p>
+    <p style="color: #666;">اضغط على اسم المادة للانتقال إلى حصة الزووم مباشرة</p>
 
     <table>
         <tr class="header-row">
@@ -66,7 +73,7 @@
 
         <tr>
             <td class="day-column">الاثنين</td>
-            <td colspan="5" class="empty">لا يوجد حصص مجدولة</td>
+            <td colspan="5" class="empty">عطلة رسمية</td>
         </tr>
 
         <tr>
@@ -80,7 +87,7 @@
 
         <tr>
             <td class="day-column">الأربعاء</td>
-            <td colspan="5" class="empty">لا يوجد حصص مجدولة</td>
+            <td colspan="5" class="empty">عطلة رسمية</td>
         </tr>
 
         <tr>
@@ -92,6 +99,10 @@
             <td><a href="#" class="subject religion">دين</a></td>
         </tr>
     </table>
+
+    <div class="footer-credit">
+        إعداد وتصميم: <strong>Eng Ahmad Hussein</strong>
+    </div>
 </div>
 
 </body>
