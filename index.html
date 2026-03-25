@@ -2,10 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>جدول حصص الصف الأول - زووم</title>
+    <title>جدول حصص الصف الأول - مدرسة الإيمان</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; padding: 20px; text-align: center; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); position: relative; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f0f2f5; 
+            margin: 0;
+            padding: 40px 20px 20px; /* زيادة الحاشية العلوية لتوفير مساحة للتوقيع */
+            text-align: center; 
+            position: relative; /* ضروري لتحديد موقع التوقيع بدقة */
+        }
+        
+        /* تنسيق توقيع الأستاذ في الزاوية */
+        .credit-corner {
+            position: absolute;
+            top: 10px;   /* مسافة صغيرة من الأعلى */
+            left: 15px;  /* مسافة من اليسار */
+            font-size: 11px; /* خط صغير جداً */
+            color: #b0b0b0; /* لون خافت جداً */
+            direction: ltr; /* لعرض النص الإنجليزي بشكل صحيح (إذا وجد) */
+            font-style: italic; /* خط مائل لمسة جمالية */
+        }
+
+        .container { 
+            max-width: 900px; 
+            margin: auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
+        }
         
         .school-logo { 
             width: 140px; 
@@ -29,81 +55,69 @@
         .national { background-color: #e74c3c; } 
         
         .empty { color: #ccc; font-style: italic; }
-
-        /* تنسيق التوقيع في الأسفل */
-        .footer-credit {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #777;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-        }
-        .footer-credit strong {
-            color: #333;
-        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <img src="logo_school.png" alt="مدرسة الإيمان الثانوية" class="school-logo">
-    
-    <h2>جدول الحصص الافتراضي - الصف الأول</h2>
-    <p>مدرسة الإيمان الثانوية - فرع الشيخ علي قدورة الطزيز</p>
-    <p style="color: #666;">اضغط على اسم المادة للانتقال إلى حصة الزووم مباشرة</p>
-
-    <table>
-        <tr class="header-row">
-            <th>اليوم</th>
-            <th>(1)<br>8:30</th>
-            <th>(2)<br>9:20</th>
-            <th>(3)<br>10:10</th>
-            <th>(4)<br>11:00</th>
-            <th>(5)<br>11:50</th>
-        </tr>
-        
-        <tr>
-            <td class="day-column">الأحد</td>
-            <td><a href="#" class="subject national">وطنية</a></td>
-            <td><a href="#" class="subject english">انجليزي</a></td>
-            <td><a href="#" class="subject arabic">عربي</a></td>
-            <td><a href="#" class="subject arabic">عربي</a></td>
-            <td><a href="#" class="subject math">رياضيات</a></td>
-        </tr>
-
-        <tr>
-            <td class="day-column">الاثنين</td>
-            <td colspan="5" class="empty">عطلة رسمية</td>
-        </tr>
-
-        <tr>
-            <td class="day-column">الثلاثاء</td>
-            <td><a href="#" class="subject national">وطنية</a></td>
-            <td><a href="#" class="subject religion">دين</a></td>
-            <td><a href="#" class="subject arabic">عربي</a></td>
-            <td><a href="#" class="subject english">انجليزي</a></td>
-            <td><a href="#" class="subject math">رياضيات</a></td>
-        </tr>
-
-        <tr>
-            <td class="day-column">الأربعاء</td>
-            <td colspan="5" class="empty">عطلة رسمية</td>
-        </tr>
-
-        <tr>
-            <td class="day-column">الخميس</td>
-            <td class="empty">-</td>
-            <td><a href="#" class="subject english">انجليزي</a></td>
-            <td><a href="#" class="subject math">رياضيات</a></td>
-            <td><a href="#" class="subject arabic">عربي</a></td>
-            <td><a href="#" class="subject religion">دين</a></td>
-        </tr>
-    </table>
-
-    <div class="footer-credit">
-        إعداد وتصميم: <strong>Eng Ahmad Hussein</strong>
+    <div class="credit-corner">
+        إعداد وتصميم: أستاذ أحمد حسين
     </div>
-</div>
+
+    <div class="container">
+        <img src="logo_school.png" alt="مدرسة الإيمان الثانوية" class="school-logo">
+        
+        <h2>جدول الحصص الافتراضي - الصف الأول</h2>
+        <p>مدرسة الإيمان الثانوية - فرع الشيخ علي قدورة الطزيز</p>
+        <p style="color: #666; font-size: 0.9em;">اضغط على اسم المادة للانتقال إلى حصة الزووم مباشرة</p>
+
+        <table>
+            <tr class="header-row">
+                <th>اليوم</th>
+                <th>(1)<br>8:30-9:10</th>
+                <th>(2)<br>9:20-10:00</th>
+                <th>(3)<br>10:10-10:50</th>
+                <th>(4)<br>11:00-11:40</th>
+                <th>(5)<br>11:50-12:30</th>
+            </tr>
+            
+            <tr>
+                <td class="day-column">الأحد</td>
+                <td><a href="#" class="subject national">وطنية</a></td>
+                <td><a href="#" class="subject english">انجليزي</a></td>
+                <td><a href="#" class="subject arabic">عربي</a></td>
+                <td><a href="#" class="subject arabic">عربي</a></td>
+                <td><a href="#" class="subject math">رياضيات</a></td>
+            </tr>
+
+            <tr>
+                <td class="day-column">الاثنين</td>
+                <td colspan="5" class="empty">عطلة رسمية</td>
+            </tr>
+
+            <tr>
+                <td class="day-column">الثلاثاء</td>
+                <td><a href="#" class="subject national">وطنية</a></td>
+                <td><a href="#" class="subject religion">دين</a></td>
+                <td><a href="#" class="subject arabic">عربي</a></td>
+                <td><a href="#" class="subject english">انجليزي</a></td>
+                <td><a href="#" class="subject math">رياضيات</a></td>
+            </tr>
+
+            <tr>
+                <td class="day-column">الأربعاء</td>
+                <td colspan="5" class="empty">عطلة رسمية</td>
+            </tr>
+
+            <tr>
+                <td class="day-column">الخميس</td>
+                <td class="empty">-</td>
+                <td><a href="#" class="subject english">انجليزي</a></td>
+                <td><a href="#" class="subject math">رياضيات</a></td>
+                <td><a href="#" class="subject arabic">عربي</a></td>
+                <td><a href="#" class="subject religion">دين</a></td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
