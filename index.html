@@ -7,8 +7,17 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; padding: 20px; text-align: center; }
         .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         
-        /* مكان الشعار */
-        .school-logo { width: 120px; height: auto; margin-bottom: 10px; }
+        /* مكان الشعار الدائري - التعديل الجديد */
+        .school-logo { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; /* تجعل الصورة دائرية */
+            object-fit: cover; /* تحافظ على تناسب الصورة */
+            border: 3px solid #ddd; /* إطار دائري بسيط */
+            background-color: white; /* خلفية بيضاء للشعار الدائري */
+            display: inline-block; /* ليتوسط الصفحة */
+            margin-bottom: 10px;
+        }
         
         table { width: 100%; border-collapse: collapse; margin-top: 20px; table-layout: fixed; }
         th, td { border: 1px solid #ddd; padding: 15px; text-align: center; font-size: 16px; }
